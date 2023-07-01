@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  produce:
+    build: ../microservices/client
+    ports:
+      - "8080:8080"
+
+  consume:
+    build: ../microservices/server
+    ports:
+      - "8081:8081"
+
+  rabbitMQ:
+    image: rabbitmq:3-management
+    environment:
+        - RABBITMQ_DEFAULT_USER=guest
+        - RABBITMQ_DEFAULT_PASS=guest
+    ports:
+      - "15672:15672"
+      - "5672:5672"

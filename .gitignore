@@ -1,0 +1,4 @@
+
+/microservices/client/target/
+/.idea/
+/microservices/server/target/
