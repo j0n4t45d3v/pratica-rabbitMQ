@@ -3,4 +3,4 @@
 ## BRANCHS
 __master__: Direct
 
-__pattern-rpc__: RPC
+__pattern-rpc__: [RPC](pattern-rpc)
